@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marjan Cinema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #FCF259;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 20px;
+      color: black;
+      text-shadow: 2px 2px 5px white;
+    }
+
+    p {
+      font-size: 20px;
+      color: #FFB200;
+    }
+
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 15px 0;
+      font-size: 22px;
+      font-weight: bold;
+      background: #FCF259;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee-animation 12s linear infinite, colorchange 5s linear infinite;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    @keyframes marquee-animation {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes colorchange {
+      0%   { color: #ff5050; }
+      25%  { color: #ffff66; }
+      50%  { color: #66ffcc; }
+      75%  { color: #66b3ff; }
+      100% { color: #ff5050; }
+    }
+
+    .middlecontainer iframe {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .button {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background: #000;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #FCF259;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background: black;
+      color: #FCF259;
+      padding: 2rem 1rem 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .footer-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #FCF259;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #FCF259;
+    }
+
+    .footer-bottom p {
+      max-width: 900px;
+      margin: 1rem auto 0 auto;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #FCF259;
+    }
+
+    @media (max-width: 600px) {
+      .social-icons {
+        gap: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="conten"><strong>🎥Marjan's Cinema🎥</strong></h1>
+  <p><strong>Tonight, We Are Screening<br>The Beautiful Mind Movie.</strong></p>
+
+  <div class="marquee">
+    <span><strong>Welcome to My Movie Night! Enjoy The Show!</strong></span>
+  </div>
+
+  <!-- ویدیو اول -->
+  <section>
+    <div class="middlecontainer">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/RYjBXyJu-ME"
+        title="Motivational Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ویدیو دوم -->
+  <section style="background-color: #F5F5F5; padding: 40px 0;">
+    <div class="middlecontainer">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/aCghEsTPhdA"
+        title="Pixar Short Animation - For The Birds"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- دکمه‌ها -->
+  <section>
+    <a class="button" href="https://www.youtube.com/watch?v=vNa37tOB4rE" target="_blank">🔁Play Again</a>
+    <a class="button" href="#">✳️Rate Movie</a>
+    <p><strong>⭐️⭐️⭐️⭐️⭐️</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Contact Me</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/marjan_habibi90" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/marjanhabibi90" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/marjan-habibi-80543a356" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Marjan-Habibi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/marjan_habibi_web" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="mailto:marjanhabibi875@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Marjan Habibi. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
